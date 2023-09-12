@@ -3,19 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== REMIXICONS ===============-->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
       crossorigin=""
     />
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Resume CV - Alex Russotto</title>
+
+    <title>Responsive resume cv - Bedimcode</title>
   </head>
   <body>
-    <div class="resume_container">
-      <!--=============== HEADER ===============-->
+    <div class="resume container">
+      <!--==================== HEADER ====================-->
       <header class="header" id="header">
         <nav class="nav container">
           <a href="#" class="nav__logo">Alex</a>
@@ -58,11 +68,84 @@
           <i class="ri-moon-line change-theme" id="theme-button"></i>
         </nav>
       </header>
-      <!--=============== MAIN ===============-->
-      <main class="resume__main"></main>
-      <!--=============== FOOTER ===============-->
+
+      <!--==================== MAIN ====================-->
+      <main class="resume__main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+          <div class="home__container grid">
+            <h1 class="home__name">
+              HELLO, I'M <br />
+              ALEX RUSSOTTO
+            </h1>
+
+            <div class="home__blob">
+              <div class="home__perfil">
+                <img
+                  src="assets/img/perfil.png"
+                  alt="home image"
+                  class="home__img"
+                />
+              </div>
+
+              <svg
+                class="home__star-1"
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 
+               50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z"
+                />
+              </svg>
+
+              <svg
+                class="home__star-2"
+                viewBox="0 0 50 50"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25 0L31.7523 18.2477L50 25L31.7523 31.7523L25 
+             50L18.2477 31.7523L0 25L18.2477 18.2477L25 0Z"
+                />
+              </svg>
+            </div>
+
+            <h1 class="home__profession">
+              WEB <br />
+              DEVELOPER
+            </h1>
+          </div>
+        </section>
+
+        <div class="resume__left">
+          <!--==================== ABOUT ====================-->
+          <section class="about section" id="about"></section>
+
+          <!--==================== SKILLS ====================-->
+          <section class="skills section" id="skills"></section>
+
+          <!--==================== EDUCATION ====================-->
+          <section class="education section" id="education"></section>
+        </div>
+
+        <div class="resume__right">
+          <!--==================== WORK ====================-->
+          <section class="work section" id="work"></section>
+
+          <!--==================== CERTIFICATES ====================-->
+          <section class="certificates section"></section>
+
+          <!--==================== REFERENCES ====================-->
+          <section class="references section"></section>
+        </div>
+      </main>
+
+      <!--==================== FOOTER ====================-->
       <footer class="footer"></footer>
     </div>
+
+    <!--========== SCROLL UP ==========-->
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>

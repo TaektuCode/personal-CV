@@ -5,33 +5,33 @@
 :root {
   --header-height: 3.5rem;
 
-  /*========= Colors =========*/
+  /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --title-color: hsl(48, 48%, 12%);
-  --text-color: (40, 24%, 24%);
-  --body-color: (40, 4%, 88%);
-  --container-color: (40, 48%, 88%);
+  --title-color: hsl(40, 48%, 12%);
+  --text-color: hsl(40, 24%, 24%);
+  --body-color: hsl(40, 4%, 88%);
+  --container-color: hsl(40, 48%, 88%);
 
-  /*========= Font and typography =========*/
-  /*.5rem = 8px / 1rem  = 16px... */
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: "Montserrat", sans-serif;
   --biggest-font-size: 1.75rem;
-  --h2-font-size: 1.25;
+  --h2-font-size: 1.25rem;
   --normal-font-size: 0.938rem;
   --small-font-size: 0.875rem;
 
-  /*========= Font weight =========*/
+  /*========== Font weight ==========*/
   --font-regular: 400;
   --font-medium: 500;
   --font-semi-bold: 600;
 
-  /*========= z index =========*/
+  /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/*========= Responsive typography =========*/
-@media screen and (min-width: 1824px) {
+/*========== Responsive typography ==========*/
+@media screen and (min-width: 1024px) {
   :root {
     --biggest-font-size: 3.75rem;
     --normal-font-size: 1rem;
@@ -56,11 +56,12 @@ body {
   font-weight: var(--font-medium);
   background-color: var(--container-color);
   color: var(--text-color);
+  transition: background 0.4s;
 }
 
 h1,
 h2,
-h2,
+h3,
 h4 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
@@ -79,14 +80,15 @@ img {
   max-width: 100%;
   height: auto;
 }
+
 /*=============== THEME ===============*/
 
-/*=============== Variables Dark theme ===============*/
+/*========== Variables Dark theme ==========*/
 
-/*======
-    Color changes in some parts
-    of the website, in dark theme
-======*/
+/*========== 
+	Color changes in some parts of 
+	the website, in dark theme
+==========*/
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -111,6 +113,7 @@ img {
   border-bottom: 2px solid var(--title-color);
   padding-bottom: 0.75rem;
 }
+
 /*=============== RESUME ===============*/
 
 /*=============== HEADER & NAV ===============*/
@@ -178,8 +181,100 @@ img {
   opacity: 1;
   transform: translateY(-4px);
 }
-/* Active Link */
+
+/* Active link */
 
 /*=============== HOME ===============*/
+.home__container {
+  padding-top: 7.5rem;
+  text-align: center;
+  row-gap: 0;
+}
 
+.home__name,
+.home__profession {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 2px;
+}
+
+.home__name {
+  margin-bottom: 0.25rem;
+}
+
+.home__blob {
+  position: relative;
+  justify-self: center;
+}
+
+.home__perfil {
+  width: 230px;
+  height: 270px;
+  background: linear-gradient(
+    132deg,
+    hsl(45, 6%, 70%) 25%,
+    hsl(30, 12%, 50%) 105%
+  );
+  border-radius: 15rem 15rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.home__img {
+  width: 205px;
+  transform: translateY(1px);
+}
+
+.home__star-1,
+.home__star-2 {
+  position: absolute;
+  width: 50px;
+  fill: var(--title-color);
+}
+
+.home__star-1 {
+  top: 2.5rem;
+  left: -3rem;
+  rotate: 15deg;
+}
+
+.home__star-2 {
+  right: -3.5rem;
+  bottom: 0.75rem;
+}
+
+.home__profession {
+  transform: translateY(-1.2rem);
+}
 /*=============== ABOUT ===============*/
+
+/*=============== SKILLS ===============*/
+
+/*=============== EDUCATION ===============*/
+/* To add code or make changes to the section */
+
+/*=============== WORK ===============*/
+/* To add code or make changes to the section */
+
+/*=============== CERTIFICATES ===============*/
+/* To add code or make changes to the section */
+
+/*=============== REFERENCES ===============*/
+/* To add code or make changes to the section */
+
+/*=============== FOOTER ===============*/
+
+/*=============== SCROLL BAR ===============*/
+
+/*=============== SCROLL UP ===============*/
+
+/* Show Scroll Up */
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+
+/* For medium devices */
+
+/* For large devices */
