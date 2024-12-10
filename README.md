@@ -1,6 +1,6 @@
 # Responsive Resume Website Alex
 ## My personal Resume CV
-### Responsive Resume Website Anne
+### Responsive Resume Website Alex
 
 - Responsive Resume Website Design Using HTML CSS & JavaScript
 - Contains a mobile navigation with icons.
